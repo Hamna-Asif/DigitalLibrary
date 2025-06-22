@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Books</title>
+  <link rel="stylesheet" href="search.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>📚 Search Books</h2>
+      <button onclick="location.href='loginpage.html'" class="back-btn"> Back to Login</button>
+
+      <button onclick="location.href='search.html'">Dashboard</button>
+      <button onclick="location.href='readinglist.html'">Reading List</button>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        
+        <h3 id="welcome">Search for Books</h3>
+        <img src="avatar.jpg" alt="User" class="avatar" />
+      </div>
+
+      <div class="genre-buttons">
+        <button onclick="filterGenre('Horror')">Horror</button>
+        <button onclick="filterGenre('Fantasy')">Fantasy</button>
+        <button onclick="filterGenre('Comedy')">Comedy</button>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="searchBar" placeholder="Enter book name or characters..." />
+        <button class="add-btn" onclick="searchBooks()">Search</button>
+      </div>
+
+      <!-- ✅ FIXED: only one div with id="searchResults" -->
+      <div id="searchResults" class="results-container">
+        <!-- Books will appear here -->
+      </div>
+      <!-- Recommendation Box -->
+      <div id="recommendations" class="recommendations-container">
+        <h3>Recommended Books</h3>
+        <div class="recommendation-list">
+          <!-- Recommended books will appear here -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="search.js"></script>
+</body>
+</html>

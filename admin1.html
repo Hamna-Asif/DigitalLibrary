@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Admin Page</title>
+  <link rel="stylesheet" href="admin1.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-button">←</button>
+    
+    <div class="admin-panel">
+      <h1>ADMIN PAGE</h1>
+      
+      <div class="form-group">
+        <label for="file-input" class="form-label">Book picture</label>
+        <div class="form-input">
+          <div class="book-photo" id="book-photo-container">
+            <div id="photo-placeholder">Add book photo</div>
+          </div>
+          <input type="file" id="file-input" accept="image/*" title="Upload a book photo">
+          <div class="error-message" id="photo-error">Please add a book photo</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <div class="form-input">
+          <textarea id="description" placeholder="Enter book description" title="Enter book description"></textarea>
+          <div class="error-message" id="description-error">Please enter a book description</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="author" class="form-label">Author</label>
+        <div class="form-input">
+          <input type="text" id="author" placeholder="Enter Author Name" title="Enter Author Name">
+          <div class="error-message" id="author-error">Please enter an author name</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <div class="form-input">
+          <input type="text" id="title" placeholder="Enter Book Name" title="Enter Book Name">
+          <div class="error-message" id="title-error">Please enter a book title</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="link" class="form-label">Link</label>
+        <div class="form-input">
+          <input type="text" id="link" placeholder="Enter download link" title="Enter download link">
+          <div class="error-message" id="link-error">Please enter a valid download link</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="category" class="form-label">Category</label>
+        <div class="form-input">
+          <input type="text" id="category" placeholder="Enter Category" title="Enter Category">
+          <div class="error-message" id="category-error">Please enter a category</div>
+        </div>
+      </div>
+      
+      
+      <button class="add-book-button" id="add-book-btn">ADD BOOK</button>
+    </div>
+  </div>
+
+  <div class="success-message" id="success-message">
+    Book added successfully!
+  </div>
+
+  <script src="admin1.js"></script>
+</body>
+</html>

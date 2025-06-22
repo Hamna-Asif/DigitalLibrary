@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Details</title>
+  <link rel="stylesheet" href="dashboard3.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2>📚 Readify</h2>
+      <button onclick="location.href='search.html'">Dashboard</button>
+      <button onclick="location.href='readinglist.html'">Reading List</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <div class="header">
+        <img src="avatar.jpg" alt="User" class="avatar" />
+
+      </div>
+
+      <div class="book-details-container">
+        <div class="book-info-wrapper">
+          <img id="bookImage" src="" alt="Book Cover" class="book-cover" />
+          
+          <div class="book-details-text">
+            <h2 id="bookTitle">Loading...</h2>
+            <p id="bookDescription">Loading book description...</p>
+            <a id="downloadLink" href="#" target="_blank" class="download-btn">DOWNLOAD LINK</a>
+            <button id="addToListBtn" class="add-btn">Delete From Reading List</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <script src="dashboard3.js"></script>
+</body>
+</html>

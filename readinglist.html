@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Reading List</title>
+  <link rel="stylesheet" href="readinglist.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>📗 Reading List</h2>
+      <button onclick="location.href='search.html'">Search Books</button>
+      <button class="active">Reading List</button>
+    </div>
+    <div class="main">
+      <div class="header">
+        <!-- Dynamic User Welcome -->
+        <h3 id="welcome" style="border: 2px solid darkgreen; padding: 5px;">Welcome, User</h3>
+        <img src="avatar.jpg" alt="User" class="avatar" />
+      </div>
+
+      <h3>Your Reading List</h3>
+      <!-- User's Book List -->
+      <div class="book-grid" id="bookGrid" style="border: 2px solid darkgreen; padding: 10px;">
+        <!-- Books added to reading list dynamically appear here -->
+      </div>
+    </div>
+  </div>
+  <script src="readinglist.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+/* Full page background image and base styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('backdrop.jpg'); /* Make sure this image is light */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #000;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #93ff00;
+  width: 200px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.sidebar button {
+  background-color: white;
+  border: none;
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #d4f7b5;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Genre buttons */
+.genre-buttons {
+  margin-bottom: 20px;
+}
+
+.genre-buttons button {
+  margin-right: 15px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.genre-buttons button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Search bar */
+.search-bar {
+  margin: 30px 0;
+}
+
+.search-bar input {
+  padding: 12px;
+  width: 70%;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-bar .add-btn {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar .add-btn:hover {
+  background-color: #218838;
+}
+
+/* Book results */
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 3px solid darkgreen;
+  padding: 20px;
+}
+
+.book {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-img {
+  width: 120px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  margin-bottom: 10px;
+}
+
+.add-btn,
+.view-btn {
+  padding: 10px 20px;
+  margin-top: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-btn:hover,
+.view-btn:hover {
+  background-color: #218838;
+}
+
+/* Recommendation Box */
+#recommendations {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recommendation-list .book-simple {
+  width: 150px;
+}
+
+.recommendation-list .book-cover {
+  width: 120px;
+  height: 180px;
+}
+
+.recommendation-list .book-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.book-simple {
+  width: 150px;
+  transform: none !important;
+}
+
+.book-cover {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+}

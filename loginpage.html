@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Login</title>
+  <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="back-button" id="backButton">
+        <img src="asset/back.svg" alt="Back">
+      </div>
+      <h1> LOGIN PAGE</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+        <button type="submit" id="submitButton">SUBMIT</button>
+        <div class="forgotpassword-link" id="forgotpasswordLink">forgot password?</div>
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+  <script src="loginpage.js"></script>
+</body>
+</html>
